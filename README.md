@@ -3,8 +3,8 @@
 This project will be inspecting the effects of water stress found from remote sensing data.
 
 
-1. Researching the casual effect of an event such as drought
-  - BSTS
-  - TFT
-  
-2. Abnormaly Dectection on EVI time series to find abnormalities in the time series/events
+1. Indentifying points of interest using change point detection
+
+2. Use Casual Impact to measure the effect of a piont of interest
+
+3. Applying the first two point to forcasts to aid preventative measures
