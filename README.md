@@ -8,3 +8,12 @@ This project will be inspecting the effects of water stress found from remote se
 2. Use Casual Impact to measure the effect of a piont of interest
 
 3. Applying the first two point to forcasts to aid preventative measures
+
+
+File descriptions:
+
+
+[sementation1.ipynb](https://github.com/jzyee/water_stress_proj/blob/master/segmentation1.ipynb)
+- Creating the synthetic dataset
+- Benchtesting the algorithms on the synthetic dataset
+
