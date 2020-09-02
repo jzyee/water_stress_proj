@@ -20,3 +20,6 @@ File descriptions:
 
 [all_in_one___periodic_wave.ipynb](https://github.com/jzyee/water_stress_proj/blob/master/all_in_one___periodic_wave.ipynb)
 - an example on how to use the classes made in this repo to benchmark the chang point algorithms on the datasets
+
+r_files folder
+- contains all the necessary files to run the R environment to do the checks for BFAST and BEAST on the synthetic dataset
