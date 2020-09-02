@@ -9,7 +9,7 @@ This project will be inspecting the effects of water stress found from remote se
 
 3. Applying the first two point to forcasts to aid preventative measures
 
-![Image of Proj](https://github.com/jzyee/water_stress_proj/tree/master/images/overall_graph.png)
+![Image of Proj](https://github.com/jzyee/water_stress_proj/blob/master/images/overall_graph.png)
 
 File descriptions:
 
