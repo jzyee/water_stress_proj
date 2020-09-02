@@ -1,0 +1,10 @@
+"0","```r
+library(pracma)
+# its plus 1 because r sarts indexing at 1 
+ts_breakpoints <- matrix(201, 301)
+
+hausdorff_dist(out$bp.Vt$breakpoints, ts_breakpoints)
+```"
+"1","Error in hausdorff_dist(out$bp.Vt$breakpoints, ts_breakpoints) : 
+  is.numeric(P) is not TRUE
+"

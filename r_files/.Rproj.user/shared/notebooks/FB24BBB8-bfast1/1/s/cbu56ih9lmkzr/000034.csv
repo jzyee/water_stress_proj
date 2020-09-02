@@ -1,0 +1,6 @@
+"0","library('bfast')"
+"0","h_ts <- ts(as.numeric(signal_df$X0), frequency = 12, start = 1986)"
+"0","fit <- bfast(h_ts, h=.1, season='harmonic', max.iter = 20, breaks=10)"
+"2","requested number of breaks = 10 too large, changed to 9"
+"2","requested number of breaks = 10 too large, changed to 9"
+"0","plot(fit)"

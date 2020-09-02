@@ -1,0 +1,36 @@
+"0","```r
+## output
+niter <- length(fit$output) # nr of iterations
+out <- fit$output[[niter]]
+
+pred_bp <- NA
+hausdorff_score <- NA
+
+# output of results of the final fitted seasonal and trend models and
+## #nr of breakpoints in both.
+if ('breakpoints' %in% names(out$bp.Vt)){
+    pred_bp <- out$bp.Vt$breakpoints
+
+
+    ts_breakpoints <- matrix(201, 301)
+
+    if (is.na(pred_bp[1]) == FALSE){
+        hausdorff_score <- hausdorff_dist(out$bp.Vt$breakpoints, ts_breakpoints)
+    }
+}
+
+bp_df = data.frame('pred_bp' = pred_bp, 'hausdorff_score' = hausdorff_score )
+
+
+print(pred_bp)
+```"
+"1","[1] 152
+"
+"0","```r
+print(hausdorff_score)
+```"
+"1","[1] 49
+"
+"0","```r
+print(bp_df)
+```"

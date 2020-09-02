@@ -1,0 +1,16 @@
+"0","library(xts)"
+"2","Loading required package: zoo
+"
+"2","
+Attaching package: ‘zoo’
+
+"
+"2","The following objects are masked from ‘package:base’:
+
+    as.Date, as.Date.numeric
+
+"
+"0","library(bfast)"
+"0","harm_df = read.csv('processed_harm_ndvi.csv', row.names='X')"
+"0","# 1986 no blanks"
+"0","harm_df = subset(harm_df, rownames(harm_df) > 1986)"

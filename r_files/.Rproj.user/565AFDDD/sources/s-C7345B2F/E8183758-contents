@@ -1,0 +1,59 @@
+---
+title: "BEAST pipeline for the synthetic files"
+output: html_notebook
+---
+
+```{r}
+library(Rbeast)
+library(functional)
+```
+
+
+```{r}
+signal_df = read.csv('signals_df.csv')
+
+df_names = matrix()
+
+for(col in names(signal_df))
+{
+    if (col != 'Date'){ 
+            #print(signal_df[col])
+            if(is.na(df_names)){
+                df_names <- col
+            }
+            else{
+                df_names <-  c(df_names, col)
+            }
+            
+        }
+   
+}
+
+bp_df = NA
+
+
+for (idx in 1: length(df_names)){
+  out <- beast(signal_df[[df_names[idx]]])
+  m <- out$tcp
+  bp <- m[apply(m, 1, Compose(is.finite, all)),]
+  print(bp)
+  if (length(bp) == 0){bp = NA}
+
+  bp_row <- data.frame('pred_bp' = bp,
+                       'signal_no' = idx)
+  
+  if (is.na(bp_df)){
+            bp_df <- bp_row
+  }
+  else{
+      bp_df <- rbind(bp_df, bp_row)
+  }
+}
+
+bp_df
+```
+```{r}
+write.csv(bp_df, 'BEAST_syth_bp.csv', row.names = FALSE)
+```
+
+.

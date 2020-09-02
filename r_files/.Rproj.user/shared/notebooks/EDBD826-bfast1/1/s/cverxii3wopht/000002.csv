@@ -1,0 +1,98 @@
+"0","```r
+library('bfast')
+library('fossil')
+
+set.seed(1)
+
+bp_df = NA
+
+df_names = matrix()
+
+for(col in names(signal_df))
+{
+    if (col != 'Date'){ 
+            #print(signal_df[col])
+            if(is.na(df_names)){
+                df_names <- col
+            }
+            else{
+                df_names <-  c(df_names, col)
+            }
+            print(col)
+        }
+   
+}
+```"
+"1","[1] \"X0\"
+[1] \"X1\"
+"
+"1","the condition has length > 1 and only the first element will be used
+"
+"1","[1] \"X2\"
+"
+"1","the condition has length > 1 and only the first element will be used
+"
+"1","[1] \"X3\"
+"
+"1","the condition has length > 1 and only the first element will be used
+"
+"1","[1] \"X4\"
+"
+"0","```r
+df_names
+```"
+"1","[1] \"X0\" \"X1\" \"X2\" \"X3\" \"X4\"
+"
+"0","```r
+# h_factors parms
+h_list = c(0.01, 0.1, 0.2, 0.4, 0.5)
+
+for (h in h_list){
+    for (idx in 1: length(df_names)){
+        h_ts <- ts(as.numeric(signal_df[[df_names[idx]]]), frequency = 12, start = 1986)
+        fit <- bfast(h_ts, h=h, season='harmonic', max.iter = 20)
+        #plot(fit)
+        
+        ## handlign fit output
+        niter <- length(fit$output) # nr of iterations
+        out <- fit$output[[niter]]
+        
+        #intializing row values
+        pred_bp <- NA
+        hausdorff_score <- NA
+        randindex_score <- NA
+        
+        # output of results of the final fitted seasonal and trend models and
+        ## #nr of breakpoints in both.
+        if ('breakpoints' %in% names(out$bp.Vt)){
+            pred_bp <- out$bp.Vt$breakpoints
+        
+        
+            ts_breakpoints <- matrix(201, 301)
+        
+            if (is.na(pred_bp[1]) == FALSE){
+                hausdorff_score <- hausdorff_dist(out$bp.Vt$breakpoints, ts_breakpoints)
+                #randindex_score <- rand.index(as.numeric(out$bp.Vt$breakpoints), as.numeric(ts_breakpoints))
+            }
+        }
+        
+        bp_row = data.frame('pred_bp' = pred_bp, 
+                            #'hausdorff_score' = hausdorff_score,
+                            #'randIndex' = randindex_score,
+                            'signal_no' = idx ,'col_name' = df_names[idx],
+                            'h_factor' = h)
+        
+        if (is.na(bp_df)){
+            bp_df <- bp_row
+        }
+        else{
+            bp_df <- rbind(bp_df, bp_row)
+        }
+    }
+}
+```"
+"1","the condition has length > 1 and only the first element will be usedthe condition has length > 1 and only the first element will be usedthe condition has length > 1 and only the first element will be usedthe condition has length > 1 and only the first element will be usedthe condition has length > 1 and only the first element will be usedthe condition has length > 1 and only the first element will be usedthe condition has length > 1 and only the first element will be usedthe condition has length > 1 and only the first element will be usedthe condition has length > 1 and only the first element will be usedthe condition has length > 1 and only the first element will be usedthe condition has length > 1 and only the first element will be usedthe condition has length > 1 and only the first element will be usedthe condition has length > 1 and only the first element will be usedthe condition has length > 1 and only the first element will be usedthe condition has length > 1 and only the first element will be usedthe condition has length > 1 and only the first element will be usedthe condition has length > 1 and only the first element will be usedthe condition has length > 1 and only the first element will be usedthe condition has length > 1 and only the first element will be usedthe condition has length > 1 and only the first element will be usedthe condition has length > 1 and only the first element will be usedthe condition has length > 1 and only the first element will be usedthe condition has length > 1 and only the first element will be usedthe condition has length > 1 and only the first element will be used
+"
+"0","```r
+bp_df
+```"

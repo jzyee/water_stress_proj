@@ -1,0 +1,5 @@
+"0",""
+"0","fit <- bfast(h_ts, h=.2, season='harmonic', max.iter = 20, breaks=10)"
+"2","requested number of breaks = 10 too large, changed to 4"
+"2","requested number of breaks = 10 too large, changed to 4"
+"0","plot(fit)"

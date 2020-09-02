@@ -1,0 +1,27 @@
+"0","library('bfast')"
+"2","Registered S3 method overwritten by 'dplyr':
+  method           from
+  print.rowwise_df     
+"
+"2","Registered S3 method overwritten by 'quantmod':
+  method            from
+  as.zoo.data.frame zoo 
+"
+"0","library('fossil')"
+"2","Loading required package: sp
+"
+"2","Loading required package: maps
+"
+"2","Loading required package: shapefiles
+"
+"2","Loading required package: foreign
+"
+"2","
+Attaching package: ‘shapefiles’
+
+"
+"2","The following objects are masked from ‘package:foreign’:
+
+    read.dbf, write.dbf
+
+"

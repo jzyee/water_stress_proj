@@ -1,0 +1,75 @@
+"0","library(Rbeast)"
+"0",""
+"0","out <- beast(signal_df$X3)"
+"1","
+Note: The ""opt$period"" parameter should be known in advance and supplied by the user but it is missing. A best guess of it is   12 AND will be used in the decomposition. Please make sure this estimate makes sense; otherwise,the BEAST decomposition result will be incorrect.
+
+"
+"1","......Options used in the simulation ......
+"
+"1","   opt$period=12 
+"
+"1","   opt$startTime=1.000000
+"
+"1","   opt$timeInterval=1.000000
+"
+"1","   opt$minSeasonOrder=1
+"
+"1","   opt$maxSeasonOrder=5
+"
+"1","   opt$minTrendOrder=0
+"
+"1","   opt$maxTrendOrder=1
+"
+"1","   opt$minSepDist_Trend=6
+"
+"1","   opt$minSepDist_Season=6
+"
+"1","   opt$maxKnotNum_Trend=57
+"
+"1","   opt$maxKnotNum_Season=57
+"
+"1","   opt$maxMoveStepSize=3
+"
+"1","   opt$samples=3000
+"
+"1","   opt$thinningFactor=1
+"
+"1","   opt$burnin=200
+"
+"1","   opt$chainNumber=3
+"
+"1","   opt$resamplingTrendOrderProb=0.100000
+"
+"1","   opt$resamplingSeasonOrderProb=0.170000
+"
+"1","   opt$omissionValue=-9999.000000
+"
+"1","   opt$seed=0
+"
+"1","   opt$outputToDisk=0
+"
+"1","   opt$outputFolder=NOT USED
+"
+"1","   opt$lengthPerTimeSeries_infile=408
+"
+"1","   opt$printToScreen=0
+"
+"1","   opt$printCharLen=80
+"
+"1","   opt$computeCredible=0
+"
+"1","   opt$fastCIComputation=1
+"
+"1","   opt$computeChangepoints=1
+"
+"1","   opt$computeSlopeSign=0
+"
+"1","   opt$computeHarmonicOrder=0
+"
+"1","   opt$computeTrendOrder=0
+"
+"1","......End of displaying Options ......
+
+"
+"0","plot(out)"

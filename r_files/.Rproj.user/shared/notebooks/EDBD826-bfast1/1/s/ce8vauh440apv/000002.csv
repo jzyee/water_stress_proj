@@ -1,0 +1,5 @@
+"0","```r
+h_xts <- xts((harm_df$NO), frequency = 12, order.by=as.Date( row.names(harm_df) ))
+h_ts <- ts(as.numeric(h_xts), frequency = 12, start = 1986)
+head(h_ts)
+```"

@@ -1,0 +1,7 @@
+"0","```r
+library(xts)
+library(bfast)
+harm_df = read.csv('processed_harm_ndvi.csv', row.names='X')
+# 1986 no blanks
+harm_df = subset(harm_df, rownames(harm_df) > 1986)
+```"

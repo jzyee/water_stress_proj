@@ -1,0 +1,4 @@
+"0","library(xts)"
+"0","harm_df = read.csv('processed_harm_ndvi.csv', row.names='X')"
+"0","# 1986 no blanks"
+"0","harm_df = subset(harm_df, rownames(harm_df) > 1986)"

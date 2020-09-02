@@ -1,0 +1,5 @@
+"0","```r
+
+fit <- bfast(h_ts, h=.2, season='harmonic', max.iter = 20)
+plot(fit)
+```"

@@ -1,0 +1,38 @@
+"0","```r
+df_names = matrix()
+
+for(col in names(signal_df))
+{
+    if (col != 'Date'){ 
+            #print(signal_df[col])
+            if(is.na(df_names)){
+                df_names <- col
+            }
+            else{
+                df_names <-  c(df_names, col)
+            }
+            print(col)
+        }
+   
+}
+```"
+"1","[1] \"X0\"
+[1] \"X1\"
+"
+"1","the condition has length > 1 and only the first element will be used
+"
+"1","[1] \"X2\"
+"
+"1","the condition has length > 1 and only the first element will be used
+"
+"1","[1] \"X3\"
+"
+"1","the condition has length > 1 and only the first element will be used
+"
+"1","[1] \"X4\"
+"
+"0","```r
+df_names
+```"
+"1","[1] \"X0\" \"X1\" \"X2\" \"X3\" \"X4\"
+"

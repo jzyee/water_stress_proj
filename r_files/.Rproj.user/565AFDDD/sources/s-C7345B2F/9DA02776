@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1597867994889.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3783189729",
+    "id" : "9DA02776",
+    "lastKnownWriteTime" : 1597868861,
+    "last_content_update" : 1597868861,
+    "path" : "~/dissertation_r/BEAST_syth_bp.csv",
+    "project_path" : "BEAST_syth_bp.csv",
+    "properties" : {
+        "cursorPosition" : "0,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "text"
+}

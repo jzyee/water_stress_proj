@@ -1,0 +1,45 @@
+"0","```r
+library(Rbeast)
+
+out <- beast(signal_df$X3)
+```"
+"1","
+Note: The \"opt$period\" parameter should be known in advance and supplied by the user but it is missing. A best guess of it is   12 AND will be used in the decomposition. Please make sure this estimate makes sense; otherwise,the BEAST decomposition result will be incorrect.
+
+......Options used in the simulation ......
+   opt$period=12 
+   opt$startTime=1.000000
+   opt$timeInterval=1.000000
+   opt$minSeasonOrder=1
+   opt$maxSeasonOrder=5
+   opt$minTrendOrder=0
+   opt$maxTrendOrder=1
+   opt$minSepDist_Trend=6
+   opt$minSepDist_Season=6
+   opt$maxKnotNum_Trend=57
+   opt$maxKnotNum_Season=57
+   opt$maxMoveStepSize=3
+   opt$samples=3000
+   opt$thinningFactor=1
+   opt$burnin=200
+   opt$chainNumber=3
+   opt$resamplingTrendOrderProb=0.100000
+   opt$resamplingSeasonOrderProb=0.170000
+   opt$omissionValue=-9999.000000
+   opt$seed=0
+   opt$outputToDisk=0
+   opt$outputFolder=NOT USED
+   opt$lengthPerTimeSeries_infile=408
+   opt$printToScreen=0
+   opt$printCharLen=80
+   opt$computeCredible=0
+   opt$fastCIComputation=1
+   opt$computeChangepoints=1
+   opt$computeSlopeSign=0
+   opt$computeHarmonicOrder=0
+   opt$computeTrendOrder=0
+......End of displaying Options ......
+"
+"0","```r
+plot(out)
+```"

@@ -1,0 +1,29 @@
+---
+title: "Single BEAST prototype Notebook"
+output: html_notebook
+---
+
+
+
+```{r}
+signal_df = read.csv('signals_df.csv')
+signal_df
+```
+
+for single tesing for the beast pipeline
+
+```{r}
+library(Rbeast)
+library(functional)
+
+out <- beast(signal_df$X3)
+plot(out)
+```
+
+
+```{r}
+
+m <- out$tcp
+m[apply(m, 1, Compose(is.finite, all)),]
+```
+

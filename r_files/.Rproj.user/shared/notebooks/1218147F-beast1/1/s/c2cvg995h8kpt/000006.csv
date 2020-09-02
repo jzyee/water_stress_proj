@@ -1,0 +1,7 @@
+"0","library(functional)"
+"0","m <- out$tcp"
+"0","m[apply(m, 1, Compose(is.finite, all)),]"
+"1","[1]"
+"1"," 337"
+"1","
+"

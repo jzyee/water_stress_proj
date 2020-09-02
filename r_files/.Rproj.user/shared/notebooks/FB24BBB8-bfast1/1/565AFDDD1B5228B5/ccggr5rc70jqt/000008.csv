@@ -1,0 +1,5 @@
+"0","## output"
+"0","niter <- length(fit$output) # nr of iterations"
+"0","out <- fit$output[[niter]]"
+"0","# output of results of the final fitted seasonal and trend models and"
+"0","## #nr of breakpoints in both."
