@@ -16,18 +16,23 @@ This project will be inspecting the effects of water stress found from remote se
 1. Load and normalize data
 
 input data should be monthly resampled dataframe with NDVI,SPEI and predictive/correlating variables to help the forecasting
+![loading]https://github.com/jzyee/water_stress_proj/tree/master/images/1.PNG
 
 2. Train model
+![train]https://github.com/jzyee/water_stress_proj/tree/master/images/2.PNG
 
 3. add forecasted data to original data
+![3]https://github.com/jzyee/water_stress_proj/tree/master/images/3.PNG
 
-4. start bench testing
+4. init bench testing
+![4]https://github.com/jzyee/water_stress_proj/tree/master/images/4.PNG
 
 5. run benchtesting
+![6]https://github.com/jzyee/water_stress_proj/tree/master/images/6.PNG
 
 6. calculate casual impact for changepoints
 first casual impact from dataframe is shown
-
+![7]https://github.com/jzyee/water_stress_proj/tree/master/images/7.PNG
 
 
 File descriptions:
@@ -49,9 +54,9 @@ r_files folder | contains all the necessary files to run the R environment to do
 
 # requirements
 
-cpdetect: https://github.com/jzyee/cpdetect
-ruptures: https://centre-borelli.github.io/ruptures-docs/
-casualimpact: https://github.com/dafiti/causalimpact
+* cpdetect: https://github.com/jzyee/cpdetect
+* ruptures: https://centre-borelli.github.io/ruptures-docs/
+* casualimpact: https://github.com/dafiti/causalimpact
 
 # References
 * Ensign DL and Pande VS. Bayesian Detection of Intensity Changes in Single Molecule and Molecular Dynamics Trajectories. J. Phys. Chem B 114:280 (2010)
