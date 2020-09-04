@@ -16,8 +16,10 @@ File descriptions:
  
  filename     |  description
  -------------|------------------------------------------------------------------------------------
- [sementation1.ipynb](https://github.com/jzyee/water_stress_proj/blob/master/segmentation1.ipynb) |  Creating the synthetic dataset                                             
+ [segmentation1.ipynb](https://github.com/jzyee/water_stress_proj/blob/master/segmentation1.ipynb) |  Creating the synthetic dataset                                             
    ---           |  Benchtesting the algorithms on the synthetic dataset
+   [segmentation2.ipynb](https://github.com/jzyee/water_stress_proj/blob/master/segmentation2.ipynb) | prototyping on the real NDVI dataset
+   ---           | check witch changepoints like in the drought-linked pointer years
 [all_in_one___periodic_wave.ipynb](https://github.com/jzyee/water_stress_proj/blob/master/all_in_one___periodic_wave.ipynb) | an example on how to use the classes made in this repo to benchmark the chang point algorithms on the datasets
 r_files folder | contains all the necessary files to run the R environment to do the checks for BFAST and BEAST on the synthetic dataset
 
