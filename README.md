@@ -9,6 +9,27 @@ This project will be inspecting the effects of water stress found from remote se
 
 ![Image of Proj](https://github.com/jzyee/water_stress_proj/blob/master/images/overall_graph.png)
 
+
+
+# How to Use
+
+1. Load and normalize data
+
+input data should be monthly resampled dataframe with NDVI,SPEI and predictive/correlating variables to help the forecasting
+
+2. Train model
+
+3. add forecasted data to original data
+
+4. start bench testing
+
+5. run benchtesting
+
+6. calculate casual impact for changepoints
+first casual impact from dataframe is shown
+
+
+
 File descriptions:
 
 
@@ -21,11 +42,14 @@ File descriptions:
    [segmentation2.ipynb](https://github.com/jzyee/water_stress_proj/blob/master/segmentation2.ipynb) | prototyping on the real NDVI dataset
    ---           | check witch changepoints like in the drought-linked pointer years
 [all_in_one___periodic_wave.ipynb](https://github.com/jzyee/water_stress_proj/blob/master/all_in_one___periodic_wave.ipynb) | an example on how to use the classes made in this repo to benchmark the chang point algorithms on the datasets
+helper.py| file containing helper functions
+lstm_model.py|file containing the model to facilitate forecasting
+
 r_files folder | contains all the necessary files to run the R environment to do the checks for BFAST and BEAST on the synthetic dataset
 
 # requirements
 
-cpdetect: https://github.com/choderalab/cpdetect
+cpdetect: https://github.com/jzyee/cpdetect
 ruptures: https://centre-borelli.github.io/ruptures-docs/
 casualimpact: https://github.com/dafiti/causalimpact
 
