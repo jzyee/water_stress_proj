@@ -13,24 +13,24 @@ This project will be inspecting the effects of water stress found from remote se
 
 # How to Use
 
-1. Load and normalize data
+## 1. Load and normalize data
 
 input data should be monthly resampled dataframe with NDVI,SPEI and predictive/correlating variables to help the forecasting
 ![loading](https://github.com/jzyee/water_stress_proj/blob/master/images/1.PNG)
 
-2. Train model
-![train](https://github.com/jzyee/water_stress_proj/blob/master/images/2.PNG)
+## 2. Train model
+> ![train](https://github.com/jzyee/water_stress_proj/blob/master/images/2.PNG)
 
-3. add forecasted data to original data
+## 3. add forecasted data to original data
 ![3](https://github.com/jzyee/water_stress_proj/blob/master/images/3.PNG)
 
-4. init bench testing
+## 4. init bench testing
 ![4](https://github.com/jzyee/water_stress_proj/blob/master/images/4.PNG)
 
-5. run benchtesting
+## 5. run benchtesting
 ![6](https://github.com/jzyee/water_stress_proj/blob/master/images/6.PNG)
 
-6. calculate casual impact for changepoints
+## 6. calculate casual impact for changepoints
 first casual impact from dataframe is shown
 ![7](https://github.com/jzyee/water_stress_proj/blob/master/images/7.PNG)
 
