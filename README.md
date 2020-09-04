@@ -47,8 +47,9 @@ File descriptions:
    [segmentation2.ipynb](https://github.com/jzyee/water_stress_proj/blob/master/segmentation2.ipynb) | prototyping on the real NDVI dataset
    ---           | check witch changepoints like in the drought-linked pointer years
 [all_in_one___periodic_wave.ipynb](https://github.com/jzyee/water_stress_proj/blob/master/all_in_one___periodic_wave.ipynb) | an example on how to use the classes made in this repo to benchmark the change point algorithms on the datasets
-helper.py| file containing helper functions
-lstm_model.py|file containing the model to facilitate forecasting
+[benchmark.py](https://github.com/jzyee/water_stress_proj/blob/master/benchmark.py) | benchmarking class to run the benchmarks
+[helper.py](https://github.com/jzyee/water_stress_proj/blob/master/helper.py)| file containing helper functions
+[lstm_model.py](https://github.com/jzyee/water_stress_proj/blob/master/lstm_model.py)|file containing the model to facilitate forecasting
 r_files folder | contains all the necessary files to run the R environment to do the checks for BFAST and BEAST on the synthetic dataset
 
 # requirements
