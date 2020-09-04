@@ -16,23 +16,23 @@ This project will be inspecting the effects of water stress found from remote se
 1. Load and normalize data
 
 input data should be monthly resampled dataframe with NDVI,SPEI and predictive/correlating variables to help the forecasting
-![loading]https://github.com/jzyee/water_stress_proj/blob/master/images/1.PNG
+![loading](https://github.com/jzyee/water_stress_proj/blob/master/images/1.PNG)
 
 2. Train model
-![train]https://github.com/jzyee/water_stress_proj/blob/master/images/2.PNG
+![train](https://github.com/jzyee/water_stress_proj/blob/master/images/2.PNG)
 
 3. add forecasted data to original data
-![3]https://github.com/jzyee/water_stress_proj/blob/master/images/3.PNG
+![3](https://github.com/jzyee/water_stress_proj/blob/master/images/3.PNG)
 
 4. init bench testing
-![4]https://github.com/jzyee/water_stress_proj/blob/master/images/4.PNG
+![4](https://github.com/jzyee/water_stress_proj/blob/master/images/4.PNG)
 
 5. run benchtesting
-![6]https://github.com/jzyee/water_stress_proj/blob/master/images/6.PNG
+![6](https://github.com/jzyee/water_stress_proj/blob/master/images/6.PNG)
 
 6. calculate casual impact for changepoints
 first casual impact from dataframe is shown
-![7]https://github.com/jzyee/water_stress_proj/blob/master/images/7.PNG
+![7](https://github.com/jzyee/water_stress_proj/blob/master/images/7.PNG)
 
 
 File descriptions:
@@ -46,7 +46,7 @@ File descriptions:
    ---           |  Benchtesting the algorithms on the synthetic dataset
    [segmentation2.ipynb](https://github.com/jzyee/water_stress_proj/blob/master/segmentation2.ipynb) | prototyping on the real NDVI dataset
    ---           | check witch changepoints like in the drought-linked pointer years
-[all_in_one___periodic_wave.ipynb](https://github.com/jzyee/water_stress_proj/blob/master/all_in_one___periodic_wave.ipynb) | an example on how to use the classes made in this repo to benchmark the chang point algorithms on the datasets
+[all_in_one___periodic_wave.ipynb](https://github.com/jzyee/water_stress_proj/blob/master/all_in_one___periodic_wave.ipynb) | an example on how to use the classes made in this repo to benchmark the change point algorithms on the datasets
 helper.py| file containing helper functions
 lstm_model.py|file containing the model to facilitate forecasting
 r_files folder | contains all the necessary files to run the R environment to do the checks for BFAST and BEAST on the synthetic dataset
