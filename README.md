@@ -4,7 +4,7 @@ This project will be inspecting the effects of water stress found from remote se
 
 
 > 1. Indentifying points of interest using change point detection
-> 2. Use Casual Impact to measure the effect of a piont of interest
+> 2. Use Casual Impact to measure the effect of a point of interest
 > 3. Applying the first two point to forcasts to aid preventative measures
 
 ![Image of Proj](https://github.com/jzyee/water_stress_proj/blob/master/images/overall_graph.png)
